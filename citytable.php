@@ -87,7 +87,7 @@ $(document).ready(function(){
                 <tr>
                 <td><?php echo $row['si_no'];?></td>
                 <td><?php echo $row['city_id'];?></td>
-                <td class="cityname" data-cityid="<?php echo $row['city_id'];?>"><?php echo $row['city_name'];?></td>
+                <td class="cityname"  id="link" data-cityid="<?php echo $row['city_id'];?>"><?php echo $row['city_name'];?></td>
                 <td><?php echo $row['state'];?></td>
                 </tr>
         </tbody>
