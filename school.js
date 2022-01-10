@@ -32,3 +32,6 @@ $(".allclass").click(function(){
      
   });
   });
+  $('#myinput').focusin(function(){
+    $(".searchpng").hide();
+})
