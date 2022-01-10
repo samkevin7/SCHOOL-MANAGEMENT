@@ -9,7 +9,7 @@
 .vertical{
     background-color: #ffff;
     width: 251px;
-    height: 113vh;
+    height: 96vh;
     border-right: 2px solid #d9e0e6;
     margin-top: -15.5px;
     margin-left: -9px;
@@ -24,7 +24,7 @@
         top: 110px;
         left: 291px;
         background-color: #fff;
-        height: 109vh;
+        height: 93vh;
         width: 85%;
         border-radius: 15px;
     }
@@ -59,25 +59,26 @@
         color: #a5b1c1;
         cursor: pointer;
         padding:  22px;
+        margin-bottom: -16px;
     }
     /* .sidetext:hover{
         border-left: 3px solid rgb(45, 45, 196);
         background-color:#eef0f3 ;
     } */
     #city:hover{
-        border-left: 3px solid rgb(45, 45, 196);
+        border-left: 5px solid rgb(45, 45, 196);
         background-color:#eef0f3 ;
     }
     #class:hover{
-        border-left: 3px solid #444444;
+        border-left: 5px solid #444444;
         background-color:#eef0f3 ;
     }
     #student:hover{
-        border-left: 3px solid #d642c8;
+        border-left: 5px solid #d642c8;
         background-color:#eef0f3 ;
     }
     #school:hover{
-        border-left: 3px solid #3dbce8;
+        border-left: 5px solid #3dbce8;
         background-color:#eef0f3 ;
     }
 
@@ -93,10 +94,9 @@
         width: 194px;
         height: 43px;
         font-size: 20px;
-        text-align: center;
     }
     .searchpng {
-        left: -175px;
+        left: -67px;
         position: relative;
         top: 8px;
         height: 32px;
@@ -123,6 +123,7 @@ a{
 .log{
     height: 39px;
     padding-top: 19px;
+    padding-left: 10px;
 }
  .filter{
     font-family: sans-serif;
@@ -166,7 +167,7 @@ tbody:nth-child(even)
 }
 .pagination{
     position:absolute;
-    top: 97%;
+    top: 96%;
     left: 93%;
 }
 .school{
@@ -174,8 +175,9 @@ tbody:nth-child(even)
 }
 .li {
     position: relative;
-    right: -9px;
-    top: -7px;
+    right: -31px;
+    top: -9px;
+    font-size: 17px;
 }
 .error {
     position: absolute;
@@ -183,4 +185,41 @@ tbody:nth-child(even)
     left: 50%;
     font-family: sans-serif;
     font-size: 20px;
+}
+.page {
+    position: absolute;
+    top: 94.5%;
+    left: 85%;
+    color: #9b9c9c;
+}
+.border {
+    border: 1px solid #ddd;
+    background-color: #ffff;
+    color: black;
+}
+.ageerror{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#link{
+    color :#3dbce8;
+}
+#link1{
+    color :#3dbce8;
+}
+.allclass{
+    color :#3dbce8;
+}
+.allstudent{
+    color :#3dbce8;
+}
+.fil {
+    padding: 16px;
+    position: relative;
+    top: -9px;
+    font-size: 19px;
+    left: -8px;
 }
