@@ -98,8 +98,8 @@ $(document).ready(function(){
                 <td><?php echo $row['city_name'];?></td>
                 <td><?php echo $row['state'];?></td>
                 <td><?php echo $row['country'];?></td>
-                <td class="allclass" data-schoolid="<?php echo $row['school_id'];?>">all class</td>
-                <td class="allstudent" data-schoolid="<?php echo $row['school_id'];?>">all students</td>
+                <td class="allclass" id="link2" data-schoolid="<?php echo $row['school_id'];?>">all class</td>
+                <td class="allstudent" id="link3" data-schoolid="<?php echo $row['school_id'];?>">all students</td>
                 </tr>
                 <?php   
                 }
