@@ -114,7 +114,7 @@ $(document).ready(function(){
                 <td><?php echo $row['standard'];?></td>
                 <td><?php echo $row['section'];?></td>
                 <td><?php echo $row['school_id'];?></td>
-                <td class="allstudents" data-classId="<?php echo $row['class_id'];?>"><?php echo "All students";?></td>
+                <td class="allstudents" id="link1" data-classId="<?php echo $row['class_id'];?>"><?php echo "All students";?></td>
                 </tr>
         </tbody>
                 <?php
