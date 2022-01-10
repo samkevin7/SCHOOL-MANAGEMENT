@@ -13,3 +13,6 @@ $('.input').click(function(e){
        } 
    })
 })
+$('#myinput').focusin(function(){
+    $(".searchpng").hide();
+})
