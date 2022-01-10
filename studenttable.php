@@ -69,7 +69,7 @@ $pageresult=($page-1)* $results_per_page;
         <input type="text" placeholder="Search" id="myinput">
         <img class="searchpng" src="./School Management/Fresh Schools Management/Search Icon.png" alt="">
        <!-- <p><img src="./School Management/Fresh Schools Management/Filter.png" alt="">Filter</p> -->
-       <button class='filter' onclick="myFunc()"><img src="./School Management/Fresh Schools Management/Filter.png" alt="" id="filter">Filter</button>
+       <button class='filter' onclick="myFunc()"><img src="./School Management/Fresh Schools Management/Filter.png" alt="" id="filter"><span class="fil">Filter</span></button>
            <div class="dropdown">
            <div class="myfilter" id="filter-content"><p class='age'>Age</p>
                <input type="radio" class='input' id='1' name='filter'value="'3'and'5'"><label for="1">3 to 5</label>
@@ -116,8 +116,13 @@ $pageresult=($page-1)* $results_per_page;
             <?php   
                 }
             }elseif($ageid){
-                $sql1="SELECT * FROM `student` WHERE age BETWEEN $ageid;" ;
+                $sql1="SELECT * FROM `student` WHERE age BETWEEN $ageid LIMIT $pageresult , $results_per_page;" ;
                 $result2=$conn->query($sql1);
+                if($result2->num_rows == 0){
+                    ?>
+                    <div class="ageerror">Students of this age not found</div>
+                 <?php   
+                }
             while ($row = $result2->fetch_assoc()) {
                 ?>
                 <tbody class="mytable">
@@ -176,6 +181,7 @@ $pageresult=($page-1)* $results_per_page;
                 ?>
         <div class="error" style="display: none;">No records found</div>
       </table>
+      <p class="page">page <span class="border"><?php echo $page;?></span>of <?php echo $numofpages;?></p>
       <div class="pagination">
       <?php
                 
